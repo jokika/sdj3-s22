@@ -1,9 +1,0 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                  xmlns:servicens="http://service.jaxwssoapservice.via.dk/">
-    <soapenv:Header/>
-    <soapenv:Body>
-        <servicens:wakeUp>
-            <name>Ben Juraj</name>
-        </servicens:wakeUp>
-    </soapenv:Body>
-</soapenv:Envelope>
