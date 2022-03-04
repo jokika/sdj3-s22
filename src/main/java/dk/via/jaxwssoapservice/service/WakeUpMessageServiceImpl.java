@@ -8,9 +8,11 @@ import java.util.Random;
 @WebService(endpointInterface = "dk.via.jaxwssoapservice.service.WakeUpMessageService",
         serviceName = "WakeUpMessageService")
 public class WakeUpMessageServiceImpl implements WakeUpMessageService {
-
+    private static System.Logger LOGGER = System.getLogger("WakeUpMessageServiceImpl");
     @Override
     public String wakeUp(@WebParam(name="name") String name) {
+        // Adding logging
+        LOGGER.log(System.Logger.Level.INFO, "Received request with parameter name: " + name);
         return getRandomMessage() + ", " + name;
     }
 
